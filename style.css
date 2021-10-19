@@ -1,0 +1,452 @@
+/* default code */
+body,h1,h2,h3,h4,h5,h6,p,a{
+    font-family: 'Work Sans', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+/* header section */
+.header-scetion{
+    border-bottom: 1px solid#ddd;
+}
+.head-icon {
+    background-color: #2980b9;
+    width: 40px;
+    display: block;
+    height: 42px;
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+.header-scetion .navbar-brand h3 {
+    font-size: 20px;
+    line-height: 2.5;
+    padding-right: 190px;
+    color: #000;
+}
+.header-scetion .navbar-brand h3:hover{
+    color: #767676;
+}
+@media screen and (max-width: 770px) {
+    .header-scetion .navbar-brand h3 {
+        display: none;
+    }
+}
+
+/* banner part */
+.banner-section{
+    background: url(./img/mbr-10.jpg) no-repeat center center;
+    padding: 200px 0;
+    margin-top: -1px;
+    position: relative;
+    z-index: 99;
+}
+.banner-section::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba( 0, 0, 0,.8);
+    z-index: -1;
+}
+.banner-contain{
+    color: #fff;
+}
+.banner-section .btn {
+    margin-top: -5px;
+    padding: 12px 26px;
+}
+.banner-contain h3 {
+    font-size: 60px;
+    padding-bottom: 30px;
+    font-weight: 600;
+}
+.banner-contain h4 {
+    font-size: 25px;
+}
+
+
+/* Activity */
+.Activity{
+    background: #f7f9ff;
+}
+
+.activity-heading {
+    padding: 121px 0px;
+    padding-right: 29px;
+}
+.activity-heading h2 {
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.activity-heading p {
+    font-size: 20px;
+    color: #767676;
+}
+
+/* applicatin top section */
+.feature-item{
+    height: 300px;
+    box-shadow: 3px 5px 20px 0 rgba( 0, 0, 0,.8);
+}
+.f-left-img{
+    width: 40%;
+    overflow: hidden;
+    margin-right: 15px;
+    border-radius: 5px 0px 0px 5px;
+    
+}
+.f-left-img img{
+    height: 100%;
+    width: auto !important;
+    max-width: inherit;
+    position: relative;
+    left: -80px;
+}
+.feature-item .image3 img{
+    left: -40px;
+}
+.f-right-sec{
+    width: 60%;
+    padding: 20px;
+}
+.f-right-sec h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 35px;
+}
+.f-right-sec h5 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #767676;
+    margin-top: 26px;
+}
+/* application bottom section */
+.application-head h2{
+    font-size: 50px;
+    font-weight: 500;
+}
+.application-bottom-items{
+    border-radius: 5px;
+}
+.application-bottom-items a{
+    position: relative;
+    display: block;
+}
+.application-bottom-items a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(98, 120, 223,.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    
+}
+.application-bottom-items:hover a::after{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* pakage section */
+.package-plan {
+    background: #f7f9ff;
+    
+}
+
+.package-head h2 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 22px;
+    margin-top: 40px;
+}
+
+.package-head h5 {
+    color: #767676;
+    font-size: 24px;
+    font-weight: 400px;
+    margin-bottom: 50px;
+}
+.pakage-items {
+    padding: 40px 0px 45px 0px;
+    box-shadow: 4px 4px 20px 2px rgba(64,87,191,.3);
+    margin: 31px 0px 80px 41px;
+}
+.pakage-items-head {
+    padding-left: 30px;
+}
+.pakage-items-head h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.pakage-items-head h5 {
+    font-size: 20px;
+    font-weight: 350;
+    color: #767676;
+    margin-bottom: 25px;
+}
+.pakage-items ul{
+    list-style: none;
+}
+.pakage-items ul li {
+    font-size: 30px;
+    padding-bottom: 16px;
+}
+.pakage-items span {
+    margin-right: 25px;
+    color: #3498db;
+}
+
+/* hover btn */
+.pakage-items:hover .pakage-btn a{
+    background: #3498db;
+    color: #fff;
+    border-color:#3498db ;
+}
+.pakage-btn a{
+    font-size: 19px;
+    font-weight: 600;
+    box-shadow: 4px 4px 20px 2px rgba(64,87,191,.3);
+}
+.pakage-btn a:hover{
+    background: #000 !important;
+    color: #fff;
+    box-shadow: none;
+    border: none;
+}
+
+/* review section */
+
+.review-head h5 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #767676;
+    margin: 20px 0px;
+}
+.review-head h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.review-head span {
+    font-size: 85px;
+    color: rgba(0,0,0,.09);
+}
+
+.reviewer{
+    display: inline-block;
+    margin: 30px 0px;
+}
+.person-img {
+    width: 70px;
+    height: auto;
+    margin-right: 20px;
+}
+.person-info{
+    text-align: left;
+    padding-left: 5px;
+}
+.person-info h4 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.person-info h6 {
+    font-size: 16;
+    color: #767676;
+}
+
+/* team section */
+.team-section{
+    background: #f7f9ff;
+    padding: 40px 0px;
+}
+
+.team-member{
+    box-shadow: 4px 4px 20px 2px rgba(64,87,191,.3);
+    padding-bottom: 37px;
+}
+
+.member-img img {
+    width: 80px;
+    margin-top: -40px;
+    margin-left: 17px;
+    box-shadow: 4px 4px 20px 2px rgba(64,87,191,.3);
+}
+.member-info {
+    padding: 30px 20px 40px 36px;
+}
+.member-info h3 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+.member-info h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+.member-info p {
+    font-size: 15px;
+    color: #767676;
+}
+
+/* contact section */
+.contact-section{
+    margin: 30px 0px;
+}
+
+.contact-items{
+    box-shadow: 4px 4px 20px 2px rgba(64,87,191,.3);
+    padding: 20px;
+}
+
+.contact-items a{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 500;
+}
+.contact-items a:hover{
+    background: #fff;
+    border: 2px solid#2980b9;
+    color: #2980b9;
+}
+
+.contact-items h3 {
+    font-size: 26px;
+    font-weight: 400;
+}
+/* app section */
+.app-heading {
+    margin: 35px 0px;
+}
+.app-heading h4 {
+    font-size: 24px;
+    color: #767676;
+    font-weight: 400;
+}
+.app-heading h2 {
+    font-size: 50px;
+    font-weight: 500;
+}
+.app-btn .button1{
+    border: 2px solid#27ae60;
+    color: #27ae60;
+    font-size: 25px;
+    font-weight: 500;
+}
+.app-btn .button1:hover{
+    background: #27ae60;
+    color: #fff;
+}
+.app-btn .button2{
+    font-size: 25px;
+    font-weight: 500;
+}
+.app-btn .button2:hover{
+    color: #27ae60;
+    background: #000;
+}
+.app-img{
+    box-shadow: 4px 4px 20px 2px rgba(84,125,212,.2);
+    height: 650px;
+    margin: 60px 0px;
+}
+/* footer section */
+.footer-section{
+    background:#ecf0f1;
+}
+
+
+/* responsive */
+@media screen and (max-width: 770px) {
+    .banner-contain h4 {
+        font-size: 20px;
+    }
+    .banner-contain h3 {
+        font-size: 35px;
+        padding-bottom: 20px;
+        font-weight: 500;
+    }
+    .banner-section .btn {
+        margin-top: 11px;
+        padding: 10px 108px;
+    }
+    .activity-heading h2 {
+        font-size: 24px;
+        color: #2980b9;
+    }
+    .activity-heading p {
+        font-size: 17px;
+    }
+    .activity-heading {
+        padding: 30px 0px !important;
+    }
+
+    .package-head h2 {
+        font-size: 30px;
+        color: #2980b9;
+    }
+    .package-head h5 {
+        font-size: 14px;
+    }
+    .application-head h2 {
+        font-size: 30px;
+        color: #2980b9;
+    }
+    .pakage-items {
+        padding-top: 30px;
+        margin: 0px;
+    }
+    .pakage-items-head h3 {
+        font-size: 30px;
+        color: #2980b9;
+    }
+    .pakage-items-head h5 {
+        font-size: 14px;
+    }
+    .pakage-items ul li {
+        font-size: 20px;
+    }
+    .review-head h2 {
+        font-size: 30px;
+        color: #2980b9;
+    }
+    .review-head h5 {
+        font-size: 14px;
+    }
+    .review-head h4 {
+        font-size: 14px;
+        margin-top: -90px;
+    }
+    .team-member {
+        margin-bottom: 40px !important;
+    }
+    .app-heading h4 {
+        font-size: 18px;
+    }
+    .app-heading h2 {
+        font-size: 30px;
+        color: #2980b9;
+    }
+    .app-img {
+        height: auto;
+    }
+    .team-section h2 {
+        color: #2980b9;
+    }
+    .footer-text{
+        font-size: 14px;
+        color: #2980b9;
+    }
+}
+
